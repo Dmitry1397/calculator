@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="calculator.js" defer></script>
+
+  <title>Frontend Mentor | Calculator app</title>
+
+</head>
+<body>
+  <div class="calculator">
+    <h1>calc</h1>
+    <div class="output">
+      <p id="output"></p>
+    </div>
+
+    <div id="error">
+      <p class="error">Couldn't divide by 0</p>
+    </div>
+
+    <div class="keypad">
+      <button class="number-button" id="number" value="7" >7</button>
+      <button class="number-button" id="number" value="8" >8</button>
+      <button class="number-button" id="number" value="9" >9</button>
+      <button class="text-button" id="delete" value="" >DEL</button>
+      <button class="number-button" id="number" value="4" >4</button>
+      <button class="number-button" id="number" value="5" >5</button>
+      <button class="number-button" id="number" value="6" >6</button>
+      <button class="number-button" id="symbol" value="+" >+</button>
+      <button class="number-button" id="number" value="1" >1</button>
+      <button class="number-button" id="number" value="2" >2</button>
+      <button class="number-button" id="number" value="3" >3</button>
+      <button class="number-button" id="symbol" value="-" >-</button>
+      <button class="number-button" id="number" value="." >.</button>
+      <button class="number-button" id="number" value="0" >0</button>
+      <button class="number-button" id="symbol" value="/" >/</button>
+      <button class="number-button" id="symbol" value="*" >x</button>
+      <button class="text-button" id="reset" value="" >RESET</button>
+      <button class="equal" id="equal" value="" >=</button>
+    </div>
+  </div>
+</body>
+</html>

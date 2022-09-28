@@ -1,0 +1,141 @@
+html {
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(222, 26%, 31%);
+}
+
+.calculator {
+    width: 420px;
+}
+
+.output p{
+    box-sizing: border-box;
+    width: 100%;
+    height: 85px;
+    padding: 20px;
+    text-align: right;
+    font-size: 50px;
+    color: hsl(0, 0%, 100%);
+    background: hsl(224, 36%, 15%);
+    border-radius: 10px;
+}
+
+#error {
+    display: none;
+    margin-top: 10px;
+}
+
+.error {
+    color: hsl(6, 63%, 50%);
+    text-align: right;
+}
+
+.keypad * {
+    display: block;
+}
+
+.keypad {
+    box-sizing: border-box;
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: hsl(223, 31%, 20%);
+    border-radius: 10px;
+}
+
+.keypad button {
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+
+    width: 80px;
+    font-size: 32px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.keypad button:hover {
+    cursor: pointer;
+}
+
+.keypad .text-button {
+    background: hsl(225, 21%, 49%);
+    color: hsl(0, 0%, 100%);
+    border-bottom: 5px inset hsl(224, 28%, 35%);
+}
+
+.text-button:hover {
+    background: hsl(224, 51%, 76%);
+}
+
+.keypad .number-button {
+    color: hsl(221, 14%, 31%);
+    background: hsl(30, 25%, 89%);
+    border-bottom: 5px inset hsl(28, 16%, 65%);
+}
+
+.number-button:hover {
+    background: hsl(0, 0%, 100%);
+}
+
+.keypad #reset {
+    grid-column: 1 / 3;
+    width: 100%;
+    
+}
+
+.keypad .equal {
+    grid-column: 3 / 5;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    background: hsl(6, 63%, 50%);
+    border-bottom: 5px inset hsl(6, 70%, 34%);
+}
+
+.equal:hover {
+    background: hsl(6, 93%, 67%);
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    margin: 10px 0;
+}
+
+p {
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    
+    body {
+        box-sizing: border-box;
+        padding: 20px;
+    }
+
+    .calculator {
+        width: 100%;
+    }
+
+    .keypad button {
+        width: unset;
+        padding: 15px 0;
+        font-size: 25px;
+    }
+
+    h1 {
+        margin: 20px 0;
+    }
+
+}
