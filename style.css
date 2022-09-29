@@ -77,6 +77,7 @@ body {
 .keypad .text-button {
     background: hsl(225, 21%, 49%);
     color: hsl(0, 0%, 100%);
+    box-shadow: inset 0px 0px 5px 5px hsl(224, 28%, 35%);
 }
 
 .text-button:hover {
@@ -85,7 +86,8 @@ body {
 
 .keypad .number-button {
     color: hsl(221, 14%, 31%);
-    background: hsl(30, 25%, 89%)
+    background: hsl(30, 25%, 89%);
+    box-shadow: inset 0px 0px 5px 5px hsl(28, 16%, 65%);
 }
 
 .number-button:hover {
@@ -102,10 +104,15 @@ body {
     width: 100%;
     color: hsl(0, 0%, 100%);
     background: hsl(6, 63%, 50%);
+    box-shadow: inset 0px 0px 5px 5px hsl(6, 70%, 34%);
 }
 
 .equal:hover {
     background: hsl(6, 93%, 67%);
+}
+
+.number-button.active {
+    background: hsl(0, 0%, 100%);
 }
 
 h1 {
